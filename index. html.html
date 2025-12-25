@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Perinthrees Tour & Travel menawarkan paket Umroh dan Haji khusus dengan layanan terpercaya, aman, dan nyaman. Daftar sekarang via WhatsApp.">
+  <meta name="keywords" content="umroh paket, haji khusus, travel umroh indonesia, perjalanan haji">
+  <title>Perinthrees Tour & Travel | Umroh & Haji Khusus</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS ANIMATION -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#f9f9f9;color:#333}
+    a{text-decoration:none}
+
+    /* HERO */
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+      url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop") center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+      padding:20px;
+    }
+
+    .hero h1{font-size:42px;margin-bottom:15px}
+    .hero p{font-size:18px;margin-bottom:25px}
+
+    .btn{
+      padding:12px 30px;
+      border-radius:30px;
+      font-weight:600;
+      display:inline-block;
+      transition:.3s;
+    }
+    .btn-primary{background:#0f9d58;color:#fff}
+    .btn-primary:hover{background:#0c7c45}
+    .btn-wa{background:#25d366;color:#fff;margin-left:10px}
+
+    section{padding:80px 10%}
+    .section-title{text-align:center;margin-bottom:50px}
+    .section-title h2{font-size:32px;color:#0f9d58}
+
+    /* ABOUT */
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:30px;
+      text-align:center;
+    }
+    .about-card{
+      background:#fff;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+    /* PACKAGES */
+    .packages{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+    .package{
+      background:#fff;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      transition:.3s;
+    }
+    .package:hover{transform:translateY(-10px)}
+    .package h3{color:#0f9d58;margin-bottom:10px}
+    .price{font-size:22px;font-weight:700;margin:15px 0}
+
+    /* GALLERY */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:15px;
+    }
+    .gallery img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:15px;
+      transition:.3s;
+    }
+    .gallery img:hover{transform:scale(1.05)}
+
+    /* FORM */
+    .form-box{
+      background:#fff;
+      padding:40px;
+      border-radius:20px;
+      max-width:600px;
+      margin:auto;
+      box-shadow:0 10px 30px rgba(0,0,0,.1);
+    }
+    input,select{
+      width:100%;
+      padding:12px;
+      margin-bottom:15px;
+      border-radius:10px;
+      border:1px solid #ccc;
+    }
+    .error{color:red;font-size:14px;margin-bottom:10px;display:none;}
+    button{
+      width:100%;
+      padding:14px;
+      background:#0f9d58;
+      color:#fff;
+      border:none;
+      border-radius:30px;
+      font-size:16px;
+      cursor:pointer;
+    }
+    button:hover{background:#0c7c45}
+
+    footer{
+      background:#0f9d58;
+      color:#fff;
+      text-align:center;
+      padding:30px;
+    }
+
+    /* FLOATING WA */
+    .wa-float{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      color:#fff;
+      padding:15px 22px;
+      border-radius:50px;
+      font-weight:bold;
+      box-shadow:0 10px 20px rgba(0,0,0,.3);
+      z-index:999;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div data-aos="fade-up">
+    <h1>Perinthrees Tour & Travel</h1>
+    <p>Wujudkan Ibadah Umroh & Haji dengan Aman, Nyaman, dan Terpercaya</p>
+    <a href="#daftar" class="btn btn-primary">Daftar Sekarang</a>
+    <a href="https://wa.me/6281291523049" class="btn btn-wa">WhatsApp</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <div class="section-title"><h2>Tentang Kami</h2></div>
+  <div class="about">
+    <div class="about-card" data-aos="fade-up">Berizin Resmi</div>
+    <div class="about-card" data-aos="fade-up" data-aos-delay="100">Pembimbing Profesional</div>
+    <div class="about-card" data-aos="fade-up" data-aos-delay="200">Hotel Dekat Masjid</div>
+    <div class="about-card" data-aos="fade-up" data-aos-delay="300">Pelayanan 24 Jam</div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section>
+  <div class="section-title"><h2>Paket Umroh & Haji</h2></div>
+  <div class="packages">
+    <div class="package" data-aos="zoom-in">
+      <h3>Umroh Reguler</h3>
+      <p>9 Hari | Hotel Bintang 4</p>
+      <div class="price">Rp 29.900.000</div>
+      <a href="https://wa.me/6281291523049" class="btn btn-primary">Daftar via WA</a>
+    </div>
+    <div class="package" data-aos="zoom-in" data-aos-delay="100">
+      <h3>Umroh VIP</h3>
+      <p>9–12 Hari | Hotel Bintang 5</p>
+      <div class="price">Rp 39.900.000</div>
+      <a href="https://wa.me/6281291523049" class="btn btn-primary">Daftar via WA</a>
+    </div>
+    <div class="package" data-aos="zoom-in" data-aos-delay="200">
+      <h3>Haji Khusus</h3>
+      <p>±25 Hari | Kuota Terbatas</p>
+      <div class="price">USD 12.000</div>
+      <a href="https://wa.me/6281291523049" class="btn btn-primary">Konsultasi</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="section-title"><h2>Galeri Jamaah</h2></div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1589187155478-37d5c8d01b32?q=80&w=800&auto=format&fit=crop" alt="Jamaah umroh di Masjidil Haram">
+    <img src="https://images.unsplash.com/photo-1505678261036-a3fcc5e884ee?q=80&w=800&auto=format&fit=crop" alt="Pemandangan Kaaba saat ibadah">
+    <img src="https://images.unsplash.com/photo-1604137352464-7471d3c9b6f3?q=80&w=800&auto=format&fit=crop" alt="Kelompok jamaah haji berdoa">
+    <img src="https://images.unsplash.com/photo-1591608516485-9d1e4c7c9d55?q=80&w=800&auto=format&fit=crop" alt="Hotel dekat Masjid Nabawi">
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="daftar">
+  <div class="section-title"><h2>Form Pendaftaran</h2></div>
+  <div class="form-box" data-aos="fade-up">
+    <input type="text" id="nama" placeholder="Nama Lengkap" required>
+    <input type="text" id="wa" placeholder="Nomor WhatsApp (contoh: 08123456789)" required>
+    <select id="paket" required>
+      <option value="">Pilih Paket</option>
+      <option>Umroh Reguler</option>
+      <option>Umroh VIP</option>
+      <option>Haji Khusus</option>
+    </select>
+    <div id="error-msg" class="error"></div>
+    <button onclick="kirimWA()">Kirim & Hubungi Admin</button>
+  </div>
+</section>
+
+<footer>
+  © 2025 Perinthrees Tour & Travel | Sahabat Ibadah Anda
+</footer>
+
+<a href="https://wa.me/6281291523049" class="wa-float">💬 WhatsApp</a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+
+function kirimWA(){
+  let nama = document.getElementById('nama').value.trim();
+  let wa = document.getElementById('wa').value.trim();
+  let paket = document.getElementById('paket').value;
+  let errorMsg = document.getElementById('error-msg');
+
+  // Validasi sederhana
+  if (!nama) {
+    errorMsg.textContent = "Nama lengkap wajib diisi.";
+    errorMsg.style.display = "block";
+    return;
+  }
+  if (!wa || !/^\d{10,15}$/.test(wa.replace(/\D/g, ''))) {
+    errorMsg.textContent = "Nomor WhatsApp harus berupa angka valid (10-15 digit).";
+    errorMsg.style.display = "block";
+    return;
+  }
+  if (!paket) {
+    errorMsg.textContent = "Pilih paket terlebih dahulu.";
+    errorMsg.style.display = "block";
+    return;
+  }
+
+  // Jika valid, sembunyikan error dan kirim WA
+  errorMsg.style.display = "none";
+  let pesan = `Assalamu'alaikum, saya ${nama} ingin mendaftar paket ${paket}. Nomor saya: ${wa}`;
+  window.open(`https://wa.me/6281291523049?text=${encodeURIComponent(pesan)}`, '_blank');
+}
+</script>
+
+</body>
+</html>
